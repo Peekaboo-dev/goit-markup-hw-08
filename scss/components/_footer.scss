@@ -1,0 +1,131 @@
+.footer {
+   padding: 60px 0;
+   background: var(--secondary-bc-black);
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+   }
+
+   &__logo--white {
+      color: var(--secondary-color-white);
+   }
+
+   &__social-title {
+      display: inline-block;
+
+      margin-bottom: 20px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: var(--secondary-color-white);
+   }
+
+   &__social-list {
+      display: flex;
+
+      :not(:last-child) {
+         margin-right: 10px;
+      }
+   }
+
+   &__social-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 44px;
+      height: 44px;
+
+      background-color: var(--background-transparent);
+      transition: background-color var(--fc-active);
+
+      border-radius: 50%;
+      &:hover,
+      &:focus {
+         background-color: var(--link-active-color);
+      }
+   }
+
+   &__social-icon {
+      fill: var(--secondary-color-white);
+   }
+   &__form-title {
+      display: inline-block;
+
+      margin-bottom: 20px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: var(--secondary-color-white);
+   }
+
+   &__form {
+      display: flex;
+   }
+
+   &__form-input {
+      margin-right: 12px;
+      padding-left: 16px;
+      min-width: 350px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+
+      color: rgba(255, 255, 255, 0.6);
+      background: #2f303a;
+      transition: border var(--fc-active);
+
+      &:hover,
+      &:focus {
+         outline: none;
+         border: 1px solid var(--link-active-color);
+         filter: none;
+      }
+      &::placeholder {
+         color: inherit;
+      }
+   }
+
+   &__form-btn {
+      display: flex;
+      align-items: center;
+   }
+   &__form-btn--icon {
+      margin-left: 10px;
+   }
+}
+.footer-contact {
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+
+   :first-child {
+      color: var(--secondary-color-white);
+   }
+   :not(:last-child) {
+      margin-bottom: 9px;
+   }
+   &__link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+
+      color: var(--color-white-transparent);
+   }
+}

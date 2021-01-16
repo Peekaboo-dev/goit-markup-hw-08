@@ -1,0 +1,39 @@
+.soft-skill {
+   padding: 94px 0;
+   &__list {
+      display: flex;
+      :not(:first-of-type) {
+         margin-left: 30px;
+      }
+   }
+
+   &__list-icon-box {
+      display: flex;
+      justify-content: center;
+
+      padding: 25px 100px;
+      margin-bottom: 30px;
+
+      background-color: var(--secondary-bc-gray);
+      border-radius: 4px;
+   }
+
+   &__list-title {
+      margin-bottom: 10px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+   }
+
+   &__list-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+
+      color: var(--secondary-color-gray);
+   }
+}

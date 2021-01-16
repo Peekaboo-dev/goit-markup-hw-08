@@ -1,0 +1,43 @@
+.tech-skill {
+   padding-bottom: 94px;
+   &__title {
+      margin-bottom: 50px;
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: 0.03em;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__list-thumb {
+      position: relative;
+   }
+
+   &__box-title {
+      position: absolute;
+      bottom: 0;
+
+      width: 100%;
+      padding: 27px 0;
+
+      background-color: var(--box-transparent);
+   }
+
+   &__list-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1;
+      letter-spacing: 0.03em;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: var(--secondary-color-white);
+   }
+}
