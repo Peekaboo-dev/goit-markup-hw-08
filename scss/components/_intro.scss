@@ -1,3 +1,9 @@
+.intro {
+   padding: 118px 0;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
 .intro__title {
    margin-bottom: 30px;
 
@@ -18,21 +24,56 @@
    flex-direction: column;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
    .intro {
-      padding: 118px 0;
-
-      background-image: var(--fc-gradient-bg), url("../images/intro-bg.jpg");
-      background-repeat: no-repeat;
       background-position: center top;
+      background-image: var(--fc-gradient-bg), url("../images/intro-bg-mobile.jpg");
       background-size: 480px 400px;
    }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
-   screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
-   screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 480px),
+   screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 480px),
+   screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 480px) {
    .intro {
-      background-image: var(--fc-gradient-bg), url("../images/intro-bg@2x.jpg");
+      background-image: var(--fc-gradient-bg), url("../images/intro-bg-mobile@2x.jpg");
+   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+   .intro {
+      background-image: var(--fc-gradient-bg), url("../images/intro-bg-tablet.jpg");
+      background-size: 768px 400px;
+   }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px),
+   screen and (min-resolution: 192dpi) and (min-width: 481px) and (max-width: 768px),
+   screen and (min-resolution: 2dppx) and (min-width: 481px) and (max-width: 768px) {
+   .intro {
+      background-image: var(--fc-gradient-bg), url("../images/intro-bg-tablet@2x.jpg");
+   }
+}
+
+@media screen and (min-width: 769px) {
+   .intro {
+      padding: 200px 0;
+
+      background-image: var(--fc-gradient-bg), url("../images/intro-bg-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   .intro__title {
+      font-size: 44px;
+      line-height: 1.36;
+   }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
+   screen and (min-resolution: 192dpi) and (min-width: 769px),
+   screen and (min-resolution: 2dppx) and (min-width: 769px) {
+   .intro {
+      background-image: var(--fc-gradient-bg), url("../images/intro-bg-desktop@2x.jpg");
    }
 }
