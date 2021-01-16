@@ -1,43 +1,50 @@
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+   .tech-skill {
+      display: none;
+   }
+}
+
 .tech-skill {
    padding-bottom: 94px;
-   &__title {
-      margin-bottom: 50px;
+}
 
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.2;
-      text-align: center;
-      letter-spacing: 0.03em;
-   }
+.tech-skill__title {
+   margin-bottom: 50px;
 
-   &__list {
-      display: flex;
-      justify-content: space-between;
-   }
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.2;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
 
-   &__list-thumb {
-      position: relative;
-   }
+.tech-skill__list {
+   display: flex;
+   justify-content: space-between;
+}
 
-   &__box-title {
-      position: absolute;
-      bottom: 0;
+.tech-skill__list-thumb {
+   position: relative;
+}
 
-      width: 100%;
-      padding: 27px 0;
+.tech-skill__box-title {
+   position: absolute;
+   bottom: 0;
 
-      background-color: var(--box-transparent);
-   }
+   width: 100%;
+   padding: 27px 0;
 
-   &__list-title {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.1;
-      letter-spacing: 0.03em;
+   background-color: var(--box-transparent);
+}
 
-      text-align: center;
-      text-transform: uppercase;
+.tech-skill__list-title {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.1;
+   letter-spacing: 0.03em;
 
-      color: var(--secondary-color-white);
-   }
+   text-align: center;
+   text-transform: uppercase;
+
+   color: var(--secondary-color-white);
 }

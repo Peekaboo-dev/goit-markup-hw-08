@@ -35,7 +35,7 @@
    color: var(--secondary-color-gray);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
    .soft-skill__list {
       :not(:last-of-type) {
          margin-bottom: 30px;
@@ -48,15 +48,15 @@
       display: flex;
       flex-wrap: wrap;
 
-      margin-left: calc(-1 * var(--card-set-gap));
-      margin-top: calc(-1 * var(--card-set-gap));
+      margin-left: calc(-1 * var(--soft-skill-item-gap));
+      margin-top: calc(-1 * var(--soft-skill-item-gap));
    }
 
    .soft-skill__list-item {
-      flex-basis: calc(100% / 2 - var(--card-set-gap));
+      flex-basis: calc(100% / 2 - var(--soft-skill-item-gap));
 
-      margin-left: var(--card-set-gap);
-      margin-top: var(--card-set-gap);
+      margin-left: var(--soft-skill-item-gap);
+      margin-top: var(--soft-skill-item-gap);
    }
 
    .soft-skill__list-title {
@@ -65,19 +65,20 @@
 }
 
 @media screen and (min-width: 1200px) {
+   .soft-skill {
+      padding: 94px 0;
+   }
    .soft-skill__list {
       display: flex;
       justify-content: space-between;
 
-      margin-left: calc(-1 * var(--card-set-gap));
-      //margin-top: calc(-1 * var(--card-set-gap));
+      margin-left: calc(-1 * var(--soft-skill-item-gap));
    }
 
    .soft-skill__list-item {
-      flex-basis: calc(100% / 4 - var(--card-set-gap));
+      flex-basis: calc(100% / 4 - var(--soft-skill-item-gap));
 
-      margin-left: var(--card-set-gap);
-      //margin-top: var(--card-set-gap);
+      margin-left: var(--soft-skill-item-gap);
    }
 
    .soft-skill__list-title {
