@@ -1,39 +1,83 @@
+//.soft-skill {
+//   padding: 94px 0;
+//   &__list {
+//      display: flex;
+//      :not(:first-of-type) {
+//         margin-left: 30px;
+//      }
+//   }
+
+//   &__list-icon-box {
+//      display: flex;
+//      justify-content: center;
+
+//      padding: 25px 100px;
+//      margin-bottom: 30px;
+
+//      background-color: var(--secondary-bc-gray);
+//      border-radius: 4px;
+//   }
+
+//   &__list-title {
+//      margin-bottom: 10px;
+
+//      font-weight: 700;
+//      font-size: 14px;
+//      line-height: 1.1;
+//      letter-spacing: 0.03em;
+//      text-transform: uppercase;
+//   }
+
+//   &__list-text {
+//      font-weight: 400;
+//      font-size: 14px;
+//      line-height: 1.7;
+//      letter-spacing: 0.03em;
+
+//      color: var(--secondary-color-gray);
+//   }
+//}
 .soft-skill {
-   padding: 94px 0;
-   &__list {
-      display: flex;
-      :not(:first-of-type) {
-         margin-left: 30px;
+   padding: 60px 0;
+}
+
+.soft-skill__list-icon-box {
+   display: flex;
+   justify-content: center;
+
+   padding: 25px 0;
+   margin-bottom: 30px;
+
+   background-color: var(--secondary-bc-gray);
+   border-radius: 4px;
+}
+
+.soft-skill__list-title {
+   margin-bottom: 10px;
+
+   font-weight: 700;
+   font-size: 14px;
+
+   line-height: 1.1;
+   letter-spacing: 0.03em;
+
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.soft-skill__list-text {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+
+   color: var(--secondary-color-gray);
+}
+
+@media screen and (min-width: 480px) {
+   .soft-skill__list {
+      :not(:last-of-type) {
+         margin-bottom: 30px;
       }
-   }
-
-   &__list-icon-box {
-      display: flex;
-      justify-content: center;
-
-      padding: 25px 100px;
-      margin-bottom: 30px;
-
-      background-color: var(--secondary-bc-gray);
-      border-radius: 4px;
-   }
-
-   &__list-title {
-      margin-bottom: 10px;
-
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.1;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-   }
-
-   &__list-text {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.7;
-      letter-spacing: 0.03em;
-
-      color: var(--secondary-color-gray);
    }
 }
