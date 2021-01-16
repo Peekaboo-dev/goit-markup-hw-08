@@ -106,15 +106,41 @@
       display: flex;
       flex-wrap: wrap;
 
-      margin-left: calc(-1 * var(--soft-skill-item-gap));
-      margin-top: calc(-1 * var(--soft-skill-item-gap));
+      margin-left: calc(-1 * var(--team-item-gap));
+      margin-top: calc(-1 * var(--team-item-gap));
    }
 
    .team__list-item {
-      flex-basis: calc(100% / 2 - var(--soft-skill-item-gap));
+      flex-basis: calc(100% / 2 - var(--team-item-gap));
 
-      margin-left: var(--soft-skill-item-gap);
-      margin-top: var(--soft-skill-item-gap);
+      margin-left: var(--team-item-gap);
+      margin-top: var(--team-item-gap);
+   }
+
+   .team__list-thumb-top {
+      max-width: 354px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .team {
+      padding: 94px 0;
+   }
+
+   .team__title {
+      font-size: 36px;
+   }
+
+   .team__list {
+      display: flex;
+
+      margin-left: calc(-1 * var(--team-item-gap));
+   }
+
+   .team__list-item {
+      flex-basis: calc(100% / 4 - var(--team-item-gap));
+
+      margin-left: var(--team-item-gap);
    }
 
    .team__list-thumb-top {
