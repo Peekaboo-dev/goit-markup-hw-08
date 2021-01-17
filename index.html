@@ -172,12 +172,27 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__list-item">
-              <div class="team__list-thumb-top">
+              <picture class="team__list-thumb-top">
+                <source
+                  srcset="
+                    ./images/team/Product_Designer/product-designer.webp    1x,
+                    ./images/team/Product_Designer/product-designer@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/Product_Designer/product-designer.jpg    1x,
+                    ./images/team/Product_Designer/product-designer@2x.jpg 2x
+                  "
+                />
                 <img
-                  src="./images/team/product-designer.jpg"
+                  src="./images/team/product_designer/product-designer.jpg"
                   alt="Игорь Демьяненко"
                 />
-              </div>
+              </picture>
 
               <div class="team__list-thumb-bottom">
                 <h3 class="team__list-title">Игорь Демьяненко</h3>
@@ -225,12 +240,27 @@
             </li>
 
             <li class="team__list-item">
-              <div class="team__list-thumb-top">
+              <picture class="team__list-thumb-top">
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/Frontend_Developer/frontend-developer.webp    1x,
+                    ./images/team/Frontend_Developer/frontend-developer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/Frontend_Developer/frontend-developer.jpg    1x,
+                    ./images/team/Frontend_Developer/frontend-developer@2x.jpg 2x
+                  "
+                />
                 <img
-                  src="./images/team/frontend-developer.jpg"
+                  src="./images/team/frontend_developer/frontend-developer.jpg"
                   alt="Ольга Репина"
                 />
-              </div>
+              </picture>
 
               <div class="team__list-thumb-bottom">
                 <h3 class="team__list-title">Ольга Репина</h3>
@@ -278,9 +308,27 @@
             </li>
 
             <li class="team__list-item">
-              <div class="team__list-thumb-top">
-                <img src="./images/team/marketing.jpg" alt="Николай Тарасов" />
-              </div>
+              <picture class="team__list-thumb-top">
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/Marketing/marketing.webp    1x,
+                    ./images/team/Marketing/marketing@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/Marketing/marketing.jpg    1x,
+                    ./images/team/Marketing/marketing@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/marketing/marketing.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
 
               <div class="team__list-thumb-bottom">
                 <h3 class="team__list-title">Николай Тарасов</h3>
@@ -328,9 +376,27 @@
             </li>
 
             <li class="team__list-item">
-              <div class="team__list-thumb-top">
-                <img src="./images/team/ui-designer.jpg" alt="Михаил Ермаков" />
-              </div>
+              <picture class="team__list-thumb-top">
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/UI_Designer/ui-designer.webp    1x,
+                    ./images/team/UI_Designer/ui-designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/team/UI_Designer/ui-designer.jpg    1x,
+                    ./images/team/UI_Designer/ui-designer@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/ui_designer/ui-designer.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
 
               <div class="team__list-thumb-bottom">
                 <h3 class="team__list-title">Михаил Ермаков</h3>
