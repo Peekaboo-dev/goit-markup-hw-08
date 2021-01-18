@@ -52,8 +52,8 @@
    }
 
    .clients__list-link {
-      max-width: 210px;
-      max-height: 90px;
+      min-width: 210px;
+      min-height: 90px;
    }
 }
 
@@ -89,15 +89,15 @@
    }
 
    .clients__list-link {
-      max-width: 226px;
-      max-height: 90px;
+      min-width: 226px;
+      min-height: 90px;
    }
 }
 
 @media screen and (min-width: 1200px) {
    .clients__list-link {
-      max-width: 170px;
-      max-height: 90px;
+      min-width: 170px;
+      min-height: 90px;
    }
    .clients__list {
       display: flex;
