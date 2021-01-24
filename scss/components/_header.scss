@@ -77,6 +77,13 @@
 
    .header__btn {
       background-color: var(--primary-bc);
+      transition: all var(--fc-active);
+      &:focus {
+         fill: var(--color-accent);
+      }
+      &:hover {
+         fill: var(--color-accent);
+      }
    }
 
    .header__btn .icon-cross {
@@ -183,7 +190,49 @@
       }
    }
 }
+@media screen and (min-width: 1200px) {
+   .header {
+      padding: 25px 0;
+   }
 
+   .header__btn {
+      display: none;
+   }
+
+   .header__inner {
+      display: flex;
+      align-items: center;
+   }
+   .menu-container {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+   }
+   .header__nav-list {
+      display: flex;
+      :not(:first-child) {
+         margin-left: 50px;
+      }
+   }
+   .header__contact {
+      display: flex;
+
+      margin-left: 305px;
+      :not(:first-child) {
+         margin-left: 30px;
+      }
+   }
+   .header__contact-link {
+      display: flex;
+      align-items: center;
+   }
+
+   .header__nav-link--active {
+      &::after {
+         bottom: -35px;
+      }
+   }
+}
 //   &__inner {
 //      display: flex;
 //      align-items: center;
