@@ -111,7 +111,7 @@
       border-color: var(--link-active-color);
       background-color: var(--link-active-color);
       background-image: url(../images/icon_check.svg);
-      background-size: contain;
+      background-size: cover;
       background-origin: border-box;
    }
 }
@@ -163,17 +163,17 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      font-size: 11px;
-      &::before {
-         width: 13px;
-         height: 13px;
-
-         margin-right: 3px;
-      }
+      font-size: 12px;
    }
    .modal-form__policy-link {
       margin-top: 4px;
       display: block;
+   }
+}
+
+@media screen and(min-width: 442px) and (max-width: 479px) {
+   .modal-form__policy-link {
+      margin-top: 0px;
    }
 }
 
