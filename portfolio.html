@@ -17,36 +17,58 @@
         <a href="index.html" class="logo header__logo"
           ><span class="logo--accent">Web</span>Studio</a
         >
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li>
-              <a href="index.html" class="header__nav-link">Студия</a>
-            </li>
+        <button
+          type="button"
+          class="header__btn"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu-container"
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного мею">
+            <use
+              class="icon-menu"
+              xlink:href="./images/sprite.svg#icon-nav-menu"
+            ></use>
+            <use
+              class="icon-cross"
+              xlink:href="./images/sprite.svg#icon-nav-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li>
+                <a href="index.html" class="header__nav-link">Студия</a>
+              </li>
 
-            <li>
-              <a href="#" class="header__nav-link header__nav-link--active"
-                >Портфолио</a
-              >
-            </li>
+              <li>
+                <a href="#" class="header__nav-link header__nav-link--active"
+                  >Портфолио</a
+                >
+              </li>
 
-            <li>
-              <a href="#" class="header__nav-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="header__contact">
-          <a href="mailto:info@devstudio.com" class="header__contact-link"
-            ><svg width="16" height="12" class="header__contact-icon">
-              <use xlink:href="./images/sprite.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
-          >
+              <li>
+                <a href="#" class="header__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header__contact">
+            <a href="mailto:info@devstudio.com" class="header__contact-link"
+              ><svg width="16" height="12" class="header__contact-icon">
+                <use xlink:href="./images/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
 
-          <a href="tel:+380961111111" class="header__contact-link"
-            ><svg width="10" height="16" class="header__contact-icon">
-              <use xlink:href="./images/sprite.svg#icon-smartphone"></use></svg
-            >+38 096 111 11 11</a
-          >
-        </address>
+            <a href="tel:+380961111111" class="header__contact-link"
+              ><svg width="10" height="16" class="header__contact-icon">
+                <use
+                  xlink:href="./images/sprite.svg#icon-smartphone"
+                ></use></svg
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -239,8 +261,8 @@
     </main>
     <footer class="footer">
       <div class="container footer__inner">
-        <div>
-          <a href="index.html" class="logo footer__logo--white"
+        <div class="footer__inner-flex footer__inner-flex--right">
+          <a href="index.html" class="logo footer__logo footer__logo--white"
             ><span class="logo--accent">Web</span>Studio</a
           >
           <address class="footer-contact">
@@ -261,7 +283,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="footer__inner-flex footer__inner-flex--left">
           <b class="footer__social-title">присоединяйтесь</b>
           <ul class="footer__social-list">
             <li>
@@ -300,7 +322,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer__inner-flex footer__inner-flex--bottom">
           <b class="footer__form-title">Подпишитесь на рассылку</b>
 
           <form class="footer__form">
@@ -324,5 +346,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
